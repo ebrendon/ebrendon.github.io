@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-padding-top: 2rem;    
+}
+
+:root {
+    --bg-color: #212B38;
+    --main-color: #37465B;
+    --text-color: #F2F2F0;
+    --hover-color: #08C6AB;
+    --second-color: #5AFFE7;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 14%;
+
+}
+
+.scrolling-active {
+    background-color: #212B38;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background-color: var(--hover-color);
+    transition: 0.3s;
+    border-radius: 2%;
+}
+
+.home {
+    padding: 180px 14%;
+    width: 100%;
+    height: 90%;
+    min-height: 90vh;
+    /* -webkit-mask-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); */
+    /* background-image: url(/assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg); */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home__text {
+    color: var(--text-color);
+    font-size: 2.8rem;
+}
+
+.home__text span {
+    color: var(--hover-color);
+}
+
+.about {
+    padding: 120px 14%;
+    width: 100%;
+    height: 90%;
+    min-height: 90vh;
+}
+
+.about h2{
+    padding-left: 40%;
+    margin-bottom: 100px;
+    color: var(--text-color);
+    font-size: 2.8rem;
+}
+
+.about__content {
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+}
+
+.about__text {
+    width: 75%;
+    min-height: 90%;
+    color: var(--text-color);
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 2%;
+}
+
+.about__text p {
+    margin-bottom: 10px;
+}
+
+.about__text button {
+    margin-top: 15px;
+    width: 7rem;
+    height: 2rem;
+    background-color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+.about__text button:hover {
+    color: var(--text-color);
+    background-color: var(--hover-color);
+}
+
+.about__text button a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+
+.about__img {
+    width: 25%;
+    background-image: url(/assets/images/IMG_20200909_032010_575.jpg);
+    background-size: cover;
+}
+
+.skills {
+    padding: 120px 14%;
+    width: 100%;
+    height: 90%;
+    min-height: 90vh;
+}
+
+.skills h2 {
+    padding-left: 45%;
+    margin-bottom: 100px;
+    color: var(--text-color);
+    font-size: 2.8rem;
+}
+
+.skills__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 8%;
+    grid-gap: 20px;
+}
+
+.skills__card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    background-color: var(--main-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.skills__card:hover {
+    background-color: var(--hover-color);
+    margin-top: -20px;
+    transition: 0.5s;
+}
+
+
+.resume {
+    padding: 120px 14%;
+    width: 100%;
+    height: 90%;
+    min-height: 90vh;
+}
+

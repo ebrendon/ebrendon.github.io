@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">    
+
+    <title>Edon - Portfólio</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Edon Souza</a>
+
+        <ul class="navbar">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resumo</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+
+
+    <!---------------------- Inicio ---------------------->
+
+    <section class="home" id="home">
+        
+        <div class="home__text">
+            <h5>Olá, eu sou</h5>
+            <h1> <span class="input__text"></span> </h1>
+            <h6>Desenvolvedor Front-End e <br>
+                estudande de Eng. da Computação</h6>
+        </div>
+
+    </section>
+
+    <!---------------------- Sobre ---------------------->
+
+    <section class="about" id="about">
+        <h2>Sobre mim</h2>
+
+        <div class="about__content">
+            <div class="about__text">
+                <p>
+                    Eu sou Edon, natural de Remanso-BA, mas cresci em Luis Eduardo Magalhães-Ba. Atualmente focado em desenvolvimento
+                    front-end, mas com objetivo de me tornar full-stack. Cursando Engenharia da Computação na UNIVASF, com pretensão
+                    de formação até 2023(no máximo 2024). Iniciei meus estudos em desenvolvimento web em 2021, atualmente estudando JavaScript
+                    e React. Mas nos últimos meses pude destinar um tempo a estudar Python e Django, para o desenvolvimento de um projeto
+                    requerido em uma disciplina.
+                </p>
+
+                <ul>
+                    <li>Idade: 23 anos</li>
+                    <li>Mora em: Juazeiro-BA</li>
+                </ul>
+
+                <button><a href="/assets/docs/CV.pdf" target="_blank">Download CV</a></button>
+                
+            </div>
+    
+            <div class="about__img">
+    
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------------- Skills ---------------------->
+    
+    <section class="skills" id="skills">
+        <h2> Skills </h2>
+        <div class="skills__content">
+
+            <div class="skills__card">
+                <div class="card__txt">
+                    <p>HTML/CSS</p>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <div class="card__txt">
+                    <p>JAVASCRIPT</p>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <div class="card__txt">
+                    <p>BOOTSTRAP</p>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <div class="card__txt">
+                    <p>PYTHON</p>
+                </div>
+            </div>
+            
+            <div class="skills__card">
+                <div class="card__txt">
+                    <p>GIT/GITHUB</p>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <div class="card__txt">
+                    <p>POSTGRESQL</p>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <div class="card__txt">
+                    <p>FIGMA</p>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <div class="card__txt">
+                    <p>ADOBE ILLUSTRATOR</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!---------------------- Resume ---------------------->
+
+    <section class="resume" id="resume">
+
+        <h3>Em desenvolvimento</h3>
+
+    </section>
+
+    <!---------------------- Scripts Area ---------------------->
+    <script src="/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".input__text", {
+            strings: ["Edon Souza","Desenvolvedor Front-End","Designer","Freelancer"],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop: true,
+        });
+    </script>
+</body>
+</html>
